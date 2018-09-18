@@ -1,0 +1,12 @@
+<ion-content class="red" padding>
+    <h1 class="titulo">Has salvado 25 vidas</h1>
+    <h4 class="titulo">Tus Medallas</h4>
+    <ion-grid>
+        <ion-row *ngFor="let pares of nuevaData">
+            <ion-col *ngFor="let item of pares">
+                <img src="{{ item.img }}" alt="">
+                <p>{{ item.desc }}</p>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>
