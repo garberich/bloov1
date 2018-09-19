@@ -1,0 +1,56 @@
+<ion-content padding class="red">
+
+    <ion-slides pager>
+
+        <ion-slide>
+
+            <img src="assets/imgs/taxi-logo.png" class="slide-image" />
+            <h2 class="slide-title">Ingresa tus datos</h2>
+            <!-- <p>Debe de ingresar su código de usuario</p> -->
+
+            <!-- <button ion-button block (click)="mostrarInput()">
+            Ingresar
+          </button> -->
+            <ion-input type="email" placeholder="Email" [(ngModel)]="user.email"></ion-input>
+            <ion-input type="password" placeholder="Password" [(ngModel)]="user.password"></ion-input>
+            <button ion-button block round outline (click)="login()">Login</button>
+            <!-- <ion-list>
+                <ion-item>
+                    [(ngModel)]="newuser.email"
+                    <ion-input type="email" placeholder="Email"></ion-input>
+                </ion-item>
+                <ion-item>
+                    [(ngModel)]="newuser.password"
+                    <ion-input type="password" placeholder="Password"></ion-input>
+                </ion-item>
+                <ion-item>
+                    [(ngModel)]="newuser.displayName"
+                    <ion-input type="text" placeholder="Nick Name"></ion-input>
+                </ion-item>
+                (click)="signup()"
+                <button ion-button block round outline>Login</button>
+            </ion-list> -->
+
+        </ion-slide>
+
+
+        <!-- Ultimo Slide -->
+        <ion-slide>
+            <ion-toolbar>
+            </ion-toolbar>
+
+            <img src="assets/imgs/check.jpg" class="slide-image" />
+            <h2 class="slide-title">¿Listo para empezar?</h2>
+
+            <button ion-button large clear icon-right color="primary" (click)="ingresar()">
+                Continuar
+                <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+        </ion-slide>
+        <!-- Fin del último slide -->
+
+    </ion-slides>
+
+
+</ion-content>

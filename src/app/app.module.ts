@@ -11,7 +11,8 @@ import {CampaignPage,
         GamificationPage,
         MapPage,
         ProfilePage,
-        TabsPage} from "../pages/index.pages";
+        TabsPage,
+        LoginPage} from "../pages/index.pages";
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {CampaignPage,
     GamificationPage,
     MapPage,
     ProfilePage,
-    TabsPage
+    TabsPage,
+    LoginPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import {CampaignPage,
     GamificationPage,
     MapPage,
     ProfilePage,
-    TabsPage
+    TabsPage,
+    LoginPage
   ],
   providers: [
     StatusBar,
