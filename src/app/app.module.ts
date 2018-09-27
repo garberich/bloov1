@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { StatusBar } from '@ionic-native/status-bar';
 
+import { AgmCoreModule } from '@agm/core';
+
 import { MyApp } from './app.component';
 
 import {CampaignPage,
@@ -27,7 +29,10 @@ import {CampaignPage,
   ],
   imports: [
     BrowserModule,
-    IonicModule.forRoot(MyApp)
+    IonicModule.forRoot(MyApp),
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyA-gWEQQ-sqMsB2EMUb3zvCrSE3jZ_O1b0'
+    })
   ],
   bootstrap: [IonicApp],
   entryComponents: [
